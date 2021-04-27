@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/forms.css" />
+    <title>FORMS</title>
+</head>
+<body>
+    <div class="main">
+        <form action="formdata.html" target="_self" method="GET" autocomplete="on" enctype="multipart/form-data">
+            <div class="banner">
+                <h1>STUDENT APPLICATION FORM</h1>
+            </div>
+            <br>
+            <fieldset >
+                <legend>Personal Info:</legend>
+                <div class="set">
+                    <div class="data">
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" name="fname" placeholder="first name" required autofocus>
+                    </div>
+
+                    <div class="data">
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname" name="lname" placeholder="last name" required>
+                    </div>
+
+                    <div class="data">
+                        <label for="phone" >Phone Number: </label>
+                        <input type="tel" id="phone" name="phonenumber" placeholder=" 000033567" required>
+                    </div>
+
+                    <div class="data">
+                        <label for="address">Email: </label>
+                        <input type="email" id="address" name="email" placeholder="Email address" required>
+                    </div>
+
+                    <div class="data">
+                        <label for="bday">Date of Birth: </label>
+                        <input type="date" id="bday" name="birthdate" required>
+                    </div>
+
+                    <div class="data">
+                        Gender
+                    </div>
+                    <div class="data">
+                        <input type="radio" id="male" name="gender" >
+                        <label for="male">Male</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="radio" id="female" name="gender" >
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="radio" id="other" name="gender" >
+                        <label for="other">Other</label>
+                    </div>
+
+                    <div class="data">
+                        <label for="region" >Country: </label>
+                        <input type="text" id="region" name="country" placeholder=" county">
+                    </div>
+                </div>
+            
+            </fieldset>
+            <br/>
+
+            <fieldset>
+                <legend>Education:</legend>
+                <label >Careers</label>
+                <div class="set">
+                    <div class="data">
+                        <input type="checkbox" id="IT" name="IT" >
+                        <label for="IT">Infromation technology</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="checkbox" id="science" name="Data Science" >
+                        <label for="science">Data Science</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="checkbox" id="bcom" name="COM" >
+                        <label for="bcom">Commerce and Manipulation</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="checkbox" id="baf" name="AF" >
+                        <label for="baf">Accounting and Finance</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="checkbox" id="bed" name="BED" >
+                        <label for="bed">Barchelors of Education</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="checkbox" id="law" name="diplomacy" >
+                        <label for="law">Diplomacy and public relations</label>
+                    </div>
+
+                    <div class="data">
+                        <input type="checkbox" id="law" name="crime" >
+                        <label for="law">Barchelors in Criminology</label>
+                    </div>
+
+                    <div class="data">
+                        <label for="files">Upload files</label>
+                        <input type="file" id="files" name="files">
+                    </div>
+
+                    <div class="data">
+                        <label for="level">Study level</label>
+                        <select id="level" name="current level" >
+                            <option  value="level" disabled selected>Select level</option>
+                            <option value="Y1S1">Y1S1</option>
+                            <option value="Y1S2">Y1S2</option>
+                            <option value="Y2S1">Y2S1</option>
+                            <option value="Y2S2">Y2S2</option>
+                            <option value="Y3S1">Y3S1</option>
+                            <option value="Y3S2">Y3S2</option>
+                            <option value="Y4S1">Y4S1</option>
+                            <option value="Y4S2">Y4S2</option>
+                        </select>
+                    </div>
+
+                    <div class="data">
+                        <label for="message">Additional Infromation</label>
+                        <textarea name="DESCRIPTION" id="message" cols="30" rows="5"></textarea>
+                    </div>
+
+                    <div class="data">
+                        <label for="passcode">Password</label>
+                        <input type="password" id="passcode" name="passoword">
+                    </div>
+                </div>
+
+            </fieldset>
+            <div class="btn">
+                <button type="reset">RESET</button>
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
